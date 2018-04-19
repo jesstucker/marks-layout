@@ -1,0 +1,264 @@
+body {
+	width: 1444px;
+	font-family: 'Helvetica';
+	font-weight: 100;
+}
+
+#header-group {
+	background-image: url("images/room.png");
+	background-position: center;
+	background-size: 100%;
+	height: 712px;
+} 
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+#small-icon {
+	margin: 30px 30px;
+}
+
+#hamburger {
+	margin: 30px 50px;
+}
+
+#name {
+	font-family:'Open Sans';
+	font-size: 58px;
+	margin: 58px 0px 23px 0px;
+}
+
+#header-signup{
+	font-family:'Open Sans';
+	font-weight: lighter;
+	font-size: 14px;
+	background-color: #00DFD4;
+	color: white;
+	width: 161px;
+	height: 46px;
+}
+
+#boxing {
+	background-image: url("images/boxing.png");
+	background-position: center;
+	background-size: 100%;
+	height: 356px;
+	display: flex;
+	justify-content: center;
+ 	align-items: center;
+}
+
+#leads {
+	display: flex;
+	justify-content: center;
+ 	align-items: center;
+}
+
+#misc {
+	background-color: #EBEBED;
+	height: 1236px;
+	padding-left: 211px;
+	padding-right: 211px;
+	padding-top: 65px;
+	padding-bottom: 65px;
+}
+
+#about-me {
+	border-top: 5px solid #0D1C29;
+	padding: 40px;
+	background-color: white;
+	height: 590px;
+	width: 320px;
+	display: inline-block;
+	margin-bottom: 45px;
+}
+
+.head1 {
+	font-size: 18px;
+	color: #CBD2D8;
+	letter-spacing: 1.55px;
+	font-weight: 100;
+	padding-bottom: 11px;
+}
+
+.head2 {
+	font-size: 20px;
+	color: #0A1721;
+	padding-bottom: 13px;
+}
+
+.lorem-1{
+	font-size: 16px;
+	line-height: 26px;
+	color: #62676B;
+	padding-bottom: 12px;
+}
+
+#facts {
+	float: right;
+	border-top: 5px solid #0D1C29;
+	padding: 50px;
+	background-color: white;
+	height: 590px;
+	width: 661px;
+	display: inline-block;
+
+}
+
+.facts-desc{
+	font-weight: bold;
+	font-size: 14px;
+	color: #62676B;
+	line-height: 18px;
+}
+#fact0{
+	padding-top: 28px;
+	padding-bottom: 53px;
+}
+#fact1{
+	padding-left: 30px;
+}
+.facts-2{
+	padding-left: 110px;
+}
+.facts-l{
+	padding-bottom: 40px;
+}
+
+
+#location {
+	border-top: 5px solid #0D1C29;
+	height: 441px;
+	width: 1022px;
+	background-color: white;
+}
+
+#location-left{
+	display:inline-block;
+	padding: 40px;
+	width: 320px;
+}
+#address {
+	margin-top: 50px;
+	padding-bottom: 0px;
+}
+
+#hours {
+	margin-top: 20px;
+	margin-bottom: 65px;
+}
+#directions-button{
+	font-size: 14px;
+	font-weight: bold;
+	width: 210px;
+	height: 55px;
+	background-color: #0A1721;
+	color:white;
+}
+
+#location-right{
+	display:inline-block;
+	width: 700px;
+	float: right;
+}
+
+#signup {
+	height: 356px;
+}
+
+#signup-left{
+	height: 356px;
+	width: 360px;
+	display: inline-flex;
+	background-color: #13E1D4;
+	vertical-align: top;
+	justify-content: center;
+	align-items: center;
+	color: white;
+
+}
+#signup-left-inner{
+	width: 55%;
+	font-size: 18px
+}
+
+#signup-right{
+	width: 1083px;
+	height: 356px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url("images/work-guy.png");
+	background-size:100%;
+	background-position-y: 40%;
+
+}
+
+#signup-right-inner{
+	width: 650px;
+	/*margin: 0 auto; */
+
+}
+
+#signup-right-header{
+	color: white;
+	font-size: 30px;
+}
+#signup-right-inner input {
+	width: 435px;
+	height: 46px;
+	padding-left: 8px;
+}
+#signup-button{
+	background-color: #13E1D4;
+	font-size: 14px;
+	line-height: 28px;
+	color: white;
+	height: 46px;
+	width:215px;
+	vertical-align: top;
+}
+
+footer {
+	color: white;
+	height: 414px;
+	background-color: #092133;
+	padding-top: 75px;
+	padding-left: 200px;
+	padding-bottom: 75px;
+	padding-right: 200px;
+}
+
+#footer-row {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: inline-flex;
+	justify-content: flex-start;
+}
+
+#footer-row div{
+	font-size: 17px;
+	line-height: 28px;
+	letter-spacing: .21px;
+
+}
+
+#footer-row div div{
+	font-size: 13px;
+	line-height: 20px;
+	letter-spacing: 0px;
+}
+
+.item{
+	margin-right: 60px;
+	width: 115px;
+}
+footer p{
+	color: #8F92A7;
+	font-size: 12px;
+	line-height: 26px;
+	width: 989px;
+	padding-right: 40px;
+}
