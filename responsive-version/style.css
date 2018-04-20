@@ -6,16 +6,17 @@ body {
 
 #header-group {
 	background-image: url("images/room.png");
+	/*fixed;*/
 	background-position: center;
 	background-repeat:no-repeat;
-	background-size: 100%;
+	background-size: cover;
 
 } 
 
-/*nav {
+nav {
 	display: flex;
 	justify-content: space-between;
-}*/
+}
 
 .dropdown-menu-right {
 	right: 0;
@@ -54,7 +55,7 @@ body {
 #boxing {
 	background-image: url("images/boxing.png");
 	background-position: center;
-	background-size: 100%;
+	background-size: cover;
 	height: 356px;
 	display: flex;
 	justify-content: center;
@@ -165,7 +166,7 @@ body {
 
 #location-right{
 	background-image: url('images/map.png');
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
 	height: 400px;
 	/*height: 100%;*/
@@ -198,7 +199,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-image: url("images/work-guy.png");
-	background-size:100%;
+	background-size:cover;
 	background-position-y: 40%;
 
 }
