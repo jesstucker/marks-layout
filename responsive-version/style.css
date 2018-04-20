@@ -1,5 +1,4 @@
 body {
-	/*width: 1444px;*/
 	font-family: 'Helvetica';
 	font-weight: 100;
 }
@@ -8,14 +7,15 @@ body {
 #header-group {
 	background-image: url("images/room.png");
 	background-position: center;
+	background-repeat:no-repeat;
 	background-size: 100%;
-	height: 712px;
+
 } 
 
-nav {
+/*nav {
 	display: flex;
 	justify-content: space-between;
-}
+}*/
 
 .dropdown-menu-right {
 	right: 0;
@@ -32,7 +32,7 @@ nav {
 
 #name {
 	font-family:'Open Sans';
-	font-size: 58px;
+	font-size: 200%;
 	margin: 58px 0px 23px 0px;
 }
 
@@ -44,6 +44,7 @@ nav {
 	color: white;
 	width: 161px;
 	height: 46px;
+	margin-bottom: 10%;
 }
 
 #header-signup:hover{
