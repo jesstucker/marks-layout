@@ -50,6 +50,7 @@ class CustomAuthToken(ObtainAuthToken):
 
 
 
+
 # class ExampleView(APIView):
 # 	authentication_classes = (SessionAuthetication, BasicAuthentication)
 # 	permission_classes = (IsAuthenticated,)
