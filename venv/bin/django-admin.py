@@ -1,4 +1,4 @@
-#!/Users/dev/Desktop/mark_layout/venv/bin/python3.6
+#!/Users/ardor/Desktop/marks-layout/venv/bin/python3.6
 from django.core import management
 
 if __name__ == "__main__":

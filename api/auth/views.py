@@ -4,6 +4,16 @@ from auth.serializers import UserSerializer
 
 from rest_framework import authentication, exceptions
 
+from rest_framework.generics import ListAPIView
+from rest_framework.permissions import IsAuthenticated
+from rest_framework_jwt.authentication import JSONWebTokenAuthentication
+
+
+class PostView(ListAPIView):
+	authentication_class = (JSONWebTokenAuthentication,)
+	permission_classes = (IsAuthenticated)
+
+
 class ExampleAuthentication(authentication.BasicAuthentication):
 	def authenticate(self, request):
 		username = request.META.get('X_USERNAME')
@@ -15,8 +25,6 @@ class ExampleAuthentication(authentication.BasicAuthentication):
 			raise exceptions.AuthenticationFailed('No such user')
 
 		return (user, None)
-
-
 
 
 from django.views.decorators.csrf import csrf_exempt
@@ -61,3 +69,45 @@ class CustomAuthToken(ObtainAuthToken):
 # 			'auth': unicode(request.auth),
 # 		}
 # 		return Response(content)
+
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from auth.serializers import UserSerializer
+from django.contrib.auth.models import User
+from rest_framework.permissions import AllowAny
+
+
+class UserCreate(APIView):
+    """ 
+    Creates the user. 
+    """
+
+    permission_classes = (AllowAny,)
+
+    def post(self, request, format='json'):	
+        serializer = UserSerializer(data=request.data)
+        print(request.data)
+        if serializer.is_valid():
+            user = serializer.save()
+            if user:
+                return Response(serializer.data, status=status.HTTP_201_CREATED)
+        print(serializer.is_valid())
+        print(serializer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
