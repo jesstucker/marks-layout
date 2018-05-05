@@ -19,7 +19,7 @@ Open `development-layout.html` in `marks-layout/index/vanilla-js-responsive-vers
 3. Attempt to sign out
 
 ## Notes
-*Nothing has really been done for error handling really*
+*Nothing has really been done for error handling*
 
 
 Jess
