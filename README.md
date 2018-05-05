@@ -9,11 +9,14 @@ cd marks-layout
 cd api
 python manage.py runserver
 ```
+
+## Open in Browser
+Open `development-layout.html` in `marks-layout/index/vanilla-js-responsive-version/`
+
 ## In Browser 
-1. Open `development-layout.html` in `marks-layout/index/vanilla-js-responsive-version/`
-2. Attempt to register
-3. Attempt to sign in
-4. Attempt to sign out
+1. Attempt to register
+2. Attempt to sign in
+3. Attempt to sign out
 
 ## Notes
 *Nothing has really been done for error handling really*
